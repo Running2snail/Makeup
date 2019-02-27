@@ -1,0 +1,675 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0312C4B721A6B17900BAC97C /* blurVert.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 0312C4B521A6B17900BAC97C /* blurVert.glsl */; };
+		0312C4B821A6B17900BAC97C /* blurFrag.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 0312C4B621A6B17900BAC97C /* blurFrag.glsl */; };
+		03C87DDF21A046C000FA0F03 /* megviifacepp_0_5_2_model in Frameworks */ = {isa = PBXBuildFile; fileRef = 875BF174217EBFAC00295DD5 /* megviifacepp_0_5_2_model */; };
+		870DD63B2190392000627D39 /* VideoFrag.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 870DD6392190391E00627D39 /* VideoFrag.glsl */; };
+		870DD63C2190392000627D39 /* VideoVert.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 870DD63A2190391F00627D39 /* VideoVert.glsl */; };
+		870DD6412192DE6E00627D39 /* ARView.m in Sources */ = {isa = PBXBuildFile; fileRef = 870DD6402192DE6E00627D39 /* ARView.m */; };
+		8721F1FC217F1BE5005D5B29 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8721F1FB217F1BE5005D5B29 /* Localizable.strings */; };
+		8721F208217F1FBC005D5B29 /* FacePointColor.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 8721F200217F1FBB005D5B29 /* FacePointColor.glsl */; };
+		8721F209217F1FBC005D5B29 /* FacePointSize.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 8721F201217F1FBB005D5B29 /* FacePointSize.glsl */; };
+		8721F20A217F1FBC005D5B29 /* fragmentShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 8721F202217F1FBB005D5B29 /* fragmentShader.fsh */; };
+		8721F20B217F1FBC005D5B29 /* vertextShader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 8721F203217F1FBB005D5B29 /* vertextShader.vsh */; };
+		8721F21221803946005D5B29 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8721F21121803946005D5B29 /* AssetsLibrary.framework */; };
+		87323A13219BE88900BB570D /* ColorViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 87323A12219BE88900BB570D /* ColorViewCell.m */; };
+		87323A93219D5F2300BB570D /* beauty.fragment in Resources */ = {isa = PBXBuildFile; fileRef = 87323A91219D5F2200BB570D /* beauty.fragment */; };
+		87323A96219D5F3C00BB570D /* beauty.vs in Resources */ = {isa = PBXBuildFile; fileRef = 87323A95219D5F3C00BB570D /* beauty.vs */; };
+		87323A99219D606700BB570D /* origin.fragment in Resources */ = {isa = PBXBuildFile; fileRef = 87323A97219D606700BB570D /* origin.fragment */; };
+		87323A9A219D606700BB570D /* origin.vs in Resources */ = {isa = PBXBuildFile; fileRef = 87323A98219D606700BB570D /* origin.vs */; };
+		87323A9D219E6B2D00BB570D /* beautys.vs in Resources */ = {isa = PBXBuildFile; fileRef = 87323A9B219E6B2C00BB570D /* beautys.vs */; };
+		87323A9E219E6B2D00BB570D /* beautys.frag in Resources */ = {isa = PBXBuildFile; fileRef = 87323A9C219E6B2D00BB570D /* beautys.frag */; };
+		87323AA0219E961000BB570D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87323A9F219E961000BB570D /* Images.xcassets */; };
+		875BF137217DDE6900295DD5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 875BF136217DDE6900295DD5 /* AppDelegate.m */; };
+		875BF13A217DDE6900295DD5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 875BF139217DDE6900295DD5 /* ViewController.m */; };
+		875BF13D217DDE6900295DD5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 875BF13B217DDE6900295DD5 /* Main.storyboard */; };
+		875BF13F217DDE6900295DD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 875BF13E217DDE6900295DD5 /* Assets.xcassets */; };
+		875BF142217DDE6900295DD5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 875BF140217DDE6900295DD5 /* LaunchScreen.storyboard */; };
+		875BF145217DDE6900295DD5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 875BF144217DDE6900295DD5 /* main.m */; };
+		875BF160217DE0D400295DD5 /* MGFaceLicenseHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 875BF15E217DE0D400295DD5 /* MGFaceLicenseHandle.m */; };
+		875BF165217DE5B800295DD5 /* libMGLicMgrSDK-0.3.1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 875BF162217DE5B800295DD5 /* libMGLicMgrSDK-0.3.1.a */; };
+		875BF17C217EBFAC00295DD5 /* libMGFacepp-0.5.2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 875BF173217EBFAC00295DD5 /* libMGFacepp-0.5.2.a */; };
+		875BF17D217EBFAC00295DD5 /* megviifacepp_0_5_2_model in Resources */ = {isa = PBXBuildFile; fileRef = 875BF174217EBFAC00295DD5 /* megviifacepp_0_5_2_model */; };
+		875BF180217ECCA600295DD5 /* MGVideoViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 875BF17F217ECCA600295DD5 /* MGVideoViewController.mm */; };
+		875BF183217ECD2A00295DD5 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 875BF182217ECD2A00295DD5 /* AVFoundation.framework */; };
+		875BF185217ECD3700295DD5 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 875BF184217ECD3700295DD5 /* OpenGLES.framework */; };
+		875BF187217ECD4F00295DD5 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 875BF186217ECD4F00295DD5 /* CoreMedia.framework */; };
+		875BF189217ECD5F00295DD5 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 875BF188217ECD5F00295DD5 /* CoreMotion.framework */; };
+		875BF194217ECD8A00295DD5 /* GLESUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 875BF18D217ECD8A00295DD5 /* GLESUtils.m */; };
+		875BF195217ECD8A00295DD5 /* MGOpenGLRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 875BF191217ECD8A00295DD5 /* MGOpenGLRenderer.m */; };
+		875BF196217ECD8A00295DD5 /* MGOpenGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 875BF193217ECD8A00295DD5 /* MGOpenGLView.m */; };
+		875BF199217ECDE600295DD5 /* MGFaceModelArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 875BF197217ECDE500295DD5 /* MGFaceModelArray.m */; };
+		875BF19E217ECF1900295DD5 /* MGVideoManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 875BF19D217ECF1800295DD5 /* MGVideoManager.mm */; };
+		875BF1A1217ED06E00295DD5 /* MGImage.mm in Sources */ = {isa = PBXBuildFile; fileRef = 875BF1A0217ED06E00295DD5 /* MGImage.mm */; };
+		875BF1A5217ED10100295DD5 /* MGMovieRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 875BF1A3217ED10000295DD5 /* MGMovieRecorder.m */; };
+		875BF1AA217ED3B100295DD5 /* MGBaseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 875BF1A9217ED3B100295DD5 /* MGBaseKit.framework */; };
+		A87D96788778004C8EFF248D /* libPods-ARFace++.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ACAB8809D63C05A0FADFBF5 /* libPods-ARFace++.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0312C4B521A6B17900BAC97C /* blurVert.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = blurVert.glsl; sourceTree = "<group>"; };
+		0312C4B621A6B17900BAC97C /* blurFrag.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = blurFrag.glsl; sourceTree = "<group>"; };
+		128313E30747AB5C527B208F /* Pods-ARFace++.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARFace++.release.xcconfig"; path = "Pods/Target Support Files/Pods-ARFace++/Pods-ARFace++.release.xcconfig"; sourceTree = "<group>"; };
+		810C004ED1B106E5C9755294 /* Pods-ARFace++.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARFace++.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ARFace++/Pods-ARFace++.debug.xcconfig"; sourceTree = "<group>"; };
+		870DD6392190391E00627D39 /* VideoFrag.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = VideoFrag.glsl; sourceTree = "<group>"; };
+		870DD63A2190391F00627D39 /* VideoVert.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = VideoVert.glsl; sourceTree = "<group>"; };
+		870DD63F2192DE6E00627D39 /* ARView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARView.h; sourceTree = "<group>"; };
+		870DD6402192DE6E00627D39 /* ARView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARView.m; sourceTree = "<group>"; };
+		8721F1FB217F1BE5005D5B29 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		8721F200217F1FBB005D5B29 /* FacePointColor.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FacePointColor.glsl; sourceTree = "<group>"; };
+		8721F201217F1FBB005D5B29 /* FacePointSize.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FacePointSize.glsl; sourceTree = "<group>"; };
+		8721F202217F1FBB005D5B29 /* fragmentShader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = fragmentShader.fsh; sourceTree = "<group>"; };
+		8721F203217F1FBB005D5B29 /* vertextShader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = vertextShader.vsh; sourceTree = "<group>"; };
+		8721F21121803946005D5B29 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		8721F21421803C94005D5B29 /* libGPUImage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libGPUImage.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		87323A11219BE88900BB570D /* ColorViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorViewCell.h; sourceTree = "<group>"; };
+		87323A12219BE88900BB570D /* ColorViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColorViewCell.m; sourceTree = "<group>"; };
+		87323A91219D5F2200BB570D /* beauty.fragment */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = beauty.fragment; sourceTree = "<group>"; };
+		87323A95219D5F3C00BB570D /* beauty.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = beauty.vs; sourceTree = "<group>"; };
+		87323A97219D606700BB570D /* origin.fragment */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = origin.fragment; sourceTree = "<group>"; };
+		87323A98219D606700BB570D /* origin.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = origin.vs; sourceTree = "<group>"; };
+		87323A9B219E6B2C00BB570D /* beautys.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = beautys.vs; sourceTree = "<group>"; };
+		87323A9C219E6B2D00BB570D /* beautys.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = beautys.frag; sourceTree = "<group>"; };
+		87323A9F219E961000BB570D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		875BF132217DDE6900295DD5 /* ARFace++.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ARFace++.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		875BF135217DDE6900295DD5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		875BF136217DDE6900295DD5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		875BF138217DDE6900295DD5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		875BF139217DDE6900295DD5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		875BF13C217DDE6900295DD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		875BF13E217DDE6900295DD5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		875BF141217DDE6900295DD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		875BF143217DDE6900295DD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		875BF144217DDE6900295DD5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		875BF15D217DE0D400295DD5 /* MGFaceLicenseHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGFaceLicenseHandle.h; sourceTree = "<group>"; };
+		875BF15E217DE0D400295DD5 /* MGFaceLicenseHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGFaceLicenseHandle.m; sourceTree = "<group>"; };
+		875BF15F217DE0D400295DD5 /* MGNetAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGNetAccount.h; sourceTree = "<group>"; };
+		875BF162217DE5B800295DD5 /* libMGLicMgrSDK-0.3.1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libMGLicMgrSDK-0.3.1.a"; sourceTree = "<group>"; };
+		875BF163217DE5B800295DD5 /* MGLicenseCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGLicenseCommon.h; sourceTree = "<group>"; };
+		875BF164217DE5B800295DD5 /* MGLicenseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGLicenseManager.h; sourceTree = "<group>"; };
+		875BF173217EBFAC00295DD5 /* libMGFacepp-0.5.2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libMGFacepp-0.5.2.a"; sourceTree = "<group>"; };
+		875BF174217EBFAC00295DD5 /* megviifacepp_0_5_2_model */ = {isa = PBXFileReference; lastKnownFileType = file; path = megviifacepp_0_5_2_model; sourceTree = "<group>"; };
+		875BF175217EBFAC00295DD5 /* MGAlgorithmInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGAlgorithmInfo.h; sourceTree = "<group>"; };
+		875BF176217EBFAC00295DD5 /* MGDetectRectInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGDetectRectInfo.h; sourceTree = "<group>"; };
+		875BF177217EBFAC00295DD5 /* MGFaceInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGFaceInfo.h; sourceTree = "<group>"; };
+		875BF178217EBFAC00295DD5 /* MGFacepp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGFacepp.h; sourceTree = "<group>"; };
+		875BF179217EBFAC00295DD5 /* MGFaceppCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGFaceppCommon.h; sourceTree = "<group>"; };
+		875BF17A217EBFAC00295DD5 /* MGFaceppConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGFaceppConfig.h; sourceTree = "<group>"; };
+		875BF17B217EBFAC00295DD5 /* MGImageData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGImageData.h; sourceTree = "<group>"; };
+		875BF17E217ECCA500295DD5 /* MGVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGVideoViewController.h; sourceTree = "<group>"; };
+		875BF17F217ECCA600295DD5 /* MGVideoViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MGVideoViewController.mm; sourceTree = "<group>"; };
+		875BF182217ECD2A00295DD5 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		875BF184217ECD3700295DD5 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		875BF186217ECD4F00295DD5 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		875BF188217ECD5F00295DD5 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		875BF18C217ECD8A00295DD5 /* GLESUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLESUtils.h; sourceTree = "<group>"; };
+		875BF18D217ECD8A00295DD5 /* GLESUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLESUtils.m; sourceTree = "<group>"; };
+		875BF18F217ECD8A00295DD5 /* MGOpenGLConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGOpenGLConfig.h; sourceTree = "<group>"; };
+		875BF190217ECD8A00295DD5 /* MGOpenGLRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGOpenGLRenderer.h; sourceTree = "<group>"; };
+		875BF191217ECD8A00295DD5 /* MGOpenGLRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGOpenGLRenderer.m; sourceTree = "<group>"; };
+		875BF192217ECD8A00295DD5 /* MGOpenGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGOpenGLView.h; sourceTree = "<group>"; };
+		875BF193217ECD8A00295DD5 /* MGOpenGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGOpenGLView.m; sourceTree = "<group>"; };
+		875BF197217ECDE500295DD5 /* MGFaceModelArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGFaceModelArray.m; sourceTree = "<group>"; };
+		875BF198217ECDE600295DD5 /* MGFaceModelArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGFaceModelArray.h; sourceTree = "<group>"; };
+		875BF19C217ECF1800295DD5 /* MGVideoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGVideoManager.h; sourceTree = "<group>"; };
+		875BF19D217ECF1800295DD5 /* MGVideoManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MGVideoManager.mm; sourceTree = "<group>"; };
+		875BF19F217ED06D00295DD5 /* MGImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGImage.h; sourceTree = "<group>"; };
+		875BF1A0217ED06E00295DD5 /* MGImage.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MGImage.mm; sourceTree = "<group>"; };
+		875BF1A2217ED0C200295DD5 /* MGBaseDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGBaseDefine.h; sourceTree = "<group>"; };
+		875BF1A3217ED10000295DD5 /* MGMovieRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGMovieRecorder.m; sourceTree = "<group>"; };
+		875BF1A4217ED10100295DD5 /* MGMovieRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGMovieRecorder.h; sourceTree = "<group>"; };
+		875BF1A6217ED13C00295DD5 /* MGHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGHeader.h; sourceTree = "<group>"; };
+		875BF1A9217ED3B100295DD5 /* MGBaseKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MGBaseKit.framework; sourceTree = "<group>"; };
+		9ACAB8809D63C05A0FADFBF5 /* libPods-ARFace++.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ARFace++.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		875BF12F217DDE6900295DD5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03C87DDF21A046C000FA0F03 /* megviifacepp_0_5_2_model in Frameworks */,
+				8721F21221803946005D5B29 /* AssetsLibrary.framework in Frameworks */,
+				875BF189217ECD5F00295DD5 /* CoreMotion.framework in Frameworks */,
+				875BF187217ECD4F00295DD5 /* CoreMedia.framework in Frameworks */,
+				875BF185217ECD3700295DD5 /* OpenGLES.framework in Frameworks */,
+				875BF183217ECD2A00295DD5 /* AVFoundation.framework in Frameworks */,
+				875BF165217DE5B800295DD5 /* libMGLicMgrSDK-0.3.1.a in Frameworks */,
+				875BF1AA217ED3B100295DD5 /* MGBaseKit.framework in Frameworks */,
+				875BF17C217EBFAC00295DD5 /* libMGFacepp-0.5.2.a in Frameworks */,
+				A87D96788778004C8EFF248D /* libPods-ARFace++.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8721F1FD217F1FBB005D5B29 /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				0312C4B521A6B17900BAC97C /* blurVert.glsl */,
+				0312C4B621A6B17900BAC97C /* blurFrag.glsl */,
+				87323A9C219E6B2D00BB570D /* beautys.frag */,
+				87323A9B219E6B2C00BB570D /* beautys.vs */,
+				870DD6392190391E00627D39 /* VideoFrag.glsl */,
+				870DD63A2190391F00627D39 /* VideoVert.glsl */,
+				8721F200217F1FBB005D5B29 /* FacePointColor.glsl */,
+				8721F201217F1FBB005D5B29 /* FacePointSize.glsl */,
+				87323A91219D5F2200BB570D /* beauty.fragment */,
+				87323A95219D5F3C00BB570D /* beauty.vs */,
+				87323A97219D606700BB570D /* origin.fragment */,
+				87323A98219D606700BB570D /* origin.vs */,
+				8721F202217F1FBB005D5B29 /* fragmentShader.fsh */,
+				8721F203217F1FBB005D5B29 /* vertextShader.vsh */,
+			);
+			path = Shaders;
+			sourceTree = "<group>";
+		};
+		875BF129217DDE6900295DD5 = {
+			isa = PBXGroup;
+			children = (
+				875BF134217DDE6900295DD5 /* ARFace++ */,
+				875BF133217DDE6900295DD5 /* Products */,
+				875BF181217ECD2A00295DD5 /* Frameworks */,
+				9253DC30F85171A915AFB814 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		875BF133217DDE6900295DD5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				875BF132217DDE6900295DD5 /* ARFace++.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		875BF134217DDE6900295DD5 /* ARFace++ */ = {
+			isa = PBXGroup;
+			children = (
+				875BF135217DDE6900295DD5 /* AppDelegate.h */,
+				875BF136217DDE6900295DD5 /* AppDelegate.m */,
+				875BF138217DDE6900295DD5 /* ViewController.h */,
+				875BF139217DDE6900295DD5 /* ViewController.m */,
+				875BF17E217ECCA500295DD5 /* MGVideoViewController.h */,
+				875BF17F217ECCA600295DD5 /* MGVideoViewController.mm */,
+				875BF198217ECDE600295DD5 /* MGFaceModelArray.h */,
+				875BF197217ECDE500295DD5 /* MGFaceModelArray.m */,
+				870DD63F2192DE6E00627D39 /* ARView.h */,
+				870DD6402192DE6E00627D39 /* ARView.m */,
+				87323A11219BE88900BB570D /* ColorViewCell.h */,
+				87323A12219BE88900BB570D /* ColorViewCell.m */,
+				875BF18A217ECD8A00295DD5 /* OpenGL */,
+				875BF161217DE5B800295DD5 /* MegviiLicMgr-iOS-SDK */,
+				875BF15C217DE0D400295DD5 /* MGLicenseManagerHelper */,
+				875BF13B217DDE6900295DD5 /* Main.storyboard */,
+				875BF172217EBFAC00295DD5 /* MGFaceppSDK */,
+				875BF13E217DDE6900295DD5 /* Assets.xcassets */,
+				8721F1FD217F1FBB005D5B29 /* Shaders */,
+				875BF140217DDE6900295DD5 /* LaunchScreen.storyboard */,
+				8721F1FB217F1BE5005D5B29 /* Localizable.strings */,
+				875BF143217DDE6900295DD5 /* Info.plist */,
+				875BF144217DDE6900295DD5 /* main.m */,
+				87323A9F219E961000BB570D /* Images.xcassets */,
+			);
+			path = "ARFace++";
+			sourceTree = "<group>";
+		};
+		875BF15C217DE0D400295DD5 /* MGLicenseManagerHelper */ = {
+			isa = PBXGroup;
+			children = (
+				875BF15D217DE0D400295DD5 /* MGFaceLicenseHandle.h */,
+				875BF15E217DE0D400295DD5 /* MGFaceLicenseHandle.m */,
+				875BF15F217DE0D400295DD5 /* MGNetAccount.h */,
+			);
+			path = MGLicenseManagerHelper;
+			sourceTree = "<group>";
+		};
+		875BF161217DE5B800295DD5 /* MegviiLicMgr-iOS-SDK */ = {
+			isa = PBXGroup;
+			children = (
+				875BF19C217ECF1800295DD5 /* MGVideoManager.h */,
+				875BF19D217ECF1800295DD5 /* MGVideoManager.mm */,
+				875BF1A4217ED10100295DD5 /* MGMovieRecorder.h */,
+				875BF1A3217ED10000295DD5 /* MGMovieRecorder.m */,
+				875BF19F217ED06D00295DD5 /* MGImage.h */,
+				875BF1A0217ED06E00295DD5 /* MGImage.mm */,
+				875BF1A2217ED0C200295DD5 /* MGBaseDefine.h */,
+				875BF162217DE5B800295DD5 /* libMGLicMgrSDK-0.3.1.a */,
+				875BF163217DE5B800295DD5 /* MGLicenseCommon.h */,
+				875BF164217DE5B800295DD5 /* MGLicenseManager.h */,
+			);
+			path = "MegviiLicMgr-iOS-SDK";
+			sourceTree = "<group>";
+		};
+		875BF172217EBFAC00295DD5 /* MGFaceppSDK */ = {
+			isa = PBXGroup;
+			children = (
+				875BF173217EBFAC00295DD5 /* libMGFacepp-0.5.2.a */,
+				875BF174217EBFAC00295DD5 /* megviifacepp_0_5_2_model */,
+				875BF175217EBFAC00295DD5 /* MGAlgorithmInfo.h */,
+				875BF176217EBFAC00295DD5 /* MGDetectRectInfo.h */,
+				875BF177217EBFAC00295DD5 /* MGFaceInfo.h */,
+				875BF178217EBFAC00295DD5 /* MGFacepp.h */,
+				875BF179217EBFAC00295DD5 /* MGFaceppCommon.h */,
+				875BF17A217EBFAC00295DD5 /* MGFaceppConfig.h */,
+				875BF17B217EBFAC00295DD5 /* MGImageData.h */,
+			);
+			path = MGFaceppSDK;
+			sourceTree = "<group>";
+		};
+		875BF181217ECD2A00295DD5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8721F21421803C94005D5B29 /* libGPUImage.a */,
+				8721F21121803946005D5B29 /* AssetsLibrary.framework */,
+				875BF1A9217ED3B100295DD5 /* MGBaseKit.framework */,
+				875BF188217ECD5F00295DD5 /* CoreMotion.framework */,
+				875BF186217ECD4F00295DD5 /* CoreMedia.framework */,
+				875BF184217ECD3700295DD5 /* OpenGLES.framework */,
+				875BF182217ECD2A00295DD5 /* AVFoundation.framework */,
+				9ACAB8809D63C05A0FADFBF5 /* libPods-ARFace++.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		875BF18A217ECD8A00295DD5 /* OpenGL */ = {
+			isa = PBXGroup;
+			children = (
+				875BF18B217ECD8A00295DD5 /* GLUtilities */,
+				875BF18E217ECD8A00295DD5 /* Manager */,
+				875BF192217ECD8A00295DD5 /* MGOpenGLView.h */,
+				875BF193217ECD8A00295DD5 /* MGOpenGLView.m */,
+			);
+			path = OpenGL;
+			sourceTree = "<group>";
+		};
+		875BF18B217ECD8A00295DD5 /* GLUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				875BF18C217ECD8A00295DD5 /* GLESUtils.h */,
+				875BF18D217ECD8A00295DD5 /* GLESUtils.m */,
+			);
+			path = GLUtilities;
+			sourceTree = "<group>";
+		};
+		875BF18E217ECD8A00295DD5 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				875BF18F217ECD8A00295DD5 /* MGOpenGLConfig.h */,
+				875BF190217ECD8A00295DD5 /* MGOpenGLRenderer.h */,
+				875BF191217ECD8A00295DD5 /* MGOpenGLRenderer.m */,
+				875BF1A6217ED13C00295DD5 /* MGHeader.h */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		9253DC30F85171A915AFB814 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				810C004ED1B106E5C9755294 /* Pods-ARFace++.debug.xcconfig */,
+				128313E30747AB5C527B208F /* Pods-ARFace++.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		875BF131217DDE6900295DD5 /* ARFace++ */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 875BF148217DDE6900295DD5 /* Build configuration list for PBXNativeTarget "ARFace++" */;
+			buildPhases = (
+				8A7CAE06F19FFB9924B86519 /* [CP] Check Pods Manifest.lock */,
+				875BF12E217DDE6900295DD5 /* Sources */,
+				875BF12F217DDE6900295DD5 /* Frameworks */,
+				875BF130217DDE6900295DD5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ARFace++";
+			productName = "ARFace++";
+			productReference = 875BF132217DDE6900295DD5 /* ARFace++.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		875BF12A217DDE6900295DD5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "杭州辛巴供应链管理有限公司";
+				TargetAttributes = {
+					875BF131217DDE6900295DD5 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 875BF12D217DDE6900295DD5 /* Build configuration list for PBXProject "ARFace++" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 875BF129217DDE6900295DD5;
+			productRefGroup = 875BF133217DDE6900295DD5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				875BF131217DDE6900295DD5 /* ARFace++ */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		875BF130217DDE6900295DD5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87323A9E219E6B2D00BB570D /* beautys.frag in Resources */,
+				8721F209217F1FBC005D5B29 /* FacePointSize.glsl in Resources */,
+				0312C4B821A6B17900BAC97C /* blurFrag.glsl in Resources */,
+				870DD63B2190392000627D39 /* VideoFrag.glsl in Resources */,
+				8721F1FC217F1BE5005D5B29 /* Localizable.strings in Resources */,
+				875BF17D217EBFAC00295DD5 /* megviifacepp_0_5_2_model in Resources */,
+				8721F208217F1FBC005D5B29 /* FacePointColor.glsl in Resources */,
+				875BF142217DDE6900295DD5 /* LaunchScreen.storyboard in Resources */,
+				8721F20B217F1FBC005D5B29 /* vertextShader.vsh in Resources */,
+				87323A99219D606700BB570D /* origin.fragment in Resources */,
+				87323AA0219E961000BB570D /* Images.xcassets in Resources */,
+				87323A96219D5F3C00BB570D /* beauty.vs in Resources */,
+				87323A93219D5F2300BB570D /* beauty.fragment in Resources */,
+				87323A9A219D606700BB570D /* origin.vs in Resources */,
+				8721F20A217F1FBC005D5B29 /* fragmentShader.fsh in Resources */,
+				0312C4B721A6B17900BAC97C /* blurVert.glsl in Resources */,
+				875BF13F217DDE6900295DD5 /* Assets.xcassets in Resources */,
+				870DD63C2190392000627D39 /* VideoVert.glsl in Resources */,
+				87323A9D219E6B2D00BB570D /* beautys.vs in Resources */,
+				875BF13D217DDE6900295DD5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8A7CAE06F19FFB9924B86519 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ARFace++-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		875BF12E217DDE6900295DD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				875BF13A217DDE6900295DD5 /* ViewController.m in Sources */,
+				875BF145217DDE6900295DD5 /* main.m in Sources */,
+				875BF1A1217ED06E00295DD5 /* MGImage.mm in Sources */,
+				875BF160217DE0D400295DD5 /* MGFaceLicenseHandle.m in Sources */,
+				875BF19E217ECF1900295DD5 /* MGVideoManager.mm in Sources */,
+				87323A13219BE88900BB570D /* ColorViewCell.m in Sources */,
+				875BF199217ECDE600295DD5 /* MGFaceModelArray.m in Sources */,
+				875BF180217ECCA600295DD5 /* MGVideoViewController.mm in Sources */,
+				875BF194217ECD8A00295DD5 /* GLESUtils.m in Sources */,
+				875BF196217ECD8A00295DD5 /* MGOpenGLView.m in Sources */,
+				875BF195217ECD8A00295DD5 /* MGOpenGLRenderer.m in Sources */,
+				870DD6412192DE6E00627D39 /* ARView.m in Sources */,
+				875BF1A5217ED10100295DD5 /* MGMovieRecorder.m in Sources */,
+				875BF137217DDE6900295DD5 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		875BF13B217DDE6900295DD5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				875BF13C217DDE6900295DD5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		875BF140217DDE6900295DD5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				875BF141217DDE6900295DD5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		875BF146217DDE6900295DD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Hangzhou Simba Supply Chain Management Co., Ltd. (A38JMBGLKN)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		875BF147217DDE6900295DD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Hangzhou Simba Supply Chain Management Co., Ltd. (A38JMBGLKN)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		875BF149217DDE6900295DD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 810C004ED1B106E5C9755294 /* Pods-ARFace++.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A38JMBGLKN;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "ARFace++/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ARFace++/Face++SDK",
+					"$(PROJECT_DIR)/ARFace++/Face++SDK/MegviiLicMgr-iOS-SDK",
+					"$(PROJECT_DIR)/ARFace++/MegviiLicMgr-iOS-SDK",
+					"$(PROJECT_DIR)/ARFace++/MGLicenseManagerHelper/MGFaceppSDK",
+					"$(PROJECT_DIR)/ARFace++/MGFaceppSDK",
+					"$(PROJECT_DIR)/ARFace++/MGLicenseManagerHelper/Vendors/libyuv/lib",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.com.nala.ARTryMakeup;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "armv7 armv7s arm64";
+			};
+			name = Debug;
+		};
+		875BF14A217DDE6900295DD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 128313E30747AB5C527B208F /* Pods-ARFace++.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A38JMBGLKN;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "ARFace++/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ARFace++/Face++SDK",
+					"$(PROJECT_DIR)/ARFace++/Face++SDK/MegviiLicMgr-iOS-SDK",
+					"$(PROJECT_DIR)/ARFace++/MegviiLicMgr-iOS-SDK",
+					"$(PROJECT_DIR)/ARFace++/MGLicenseManagerHelper/MGFaceppSDK",
+					"$(PROJECT_DIR)/ARFace++/MGFaceppSDK",
+					"$(PROJECT_DIR)/ARFace++/MGLicenseManagerHelper/Vendors/libyuv/lib",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.com.nala.ARTryMakeup;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "armv7 armv7s arm64";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		875BF12D217DDE6900295DD5 /* Build configuration list for PBXProject "ARFace++" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				875BF146217DDE6900295DD5 /* Debug */,
+				875BF147217DDE6900295DD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		875BF148217DDE6900295DD5 /* Build configuration list for PBXNativeTarget "ARFace++" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				875BF149217DDE6900295DD5 /* Debug */,
+				875BF14A217DDE6900295DD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 875BF12A217DDE6900295DD5 /* Project object */;
+}
